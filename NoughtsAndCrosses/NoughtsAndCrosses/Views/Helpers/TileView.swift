@@ -47,7 +47,10 @@ struct TileView: View {
     func handleUserAction() {
 
         // Make this tile show the symbol for the current player
-        state = player
+        if state == empty {
+            state = player
+        }
+        
         
         // Advance to next turn
         turn += 1
@@ -58,13 +61,13 @@ struct TileView: View {
 struct TileView_Previews: PreviewProvider {
     static var previews: some View {
         TileView(state: .constant(empty),
-                 player: nought,
+                 player: empty,
                  turn: .constant(1))
         TileView(state: .constant(nought),
                  player: nought,
                  turn: .constant(1))
         TileView(state: .constant(cross),
-                 player: nought,
+                 player: cross,
                  turn: .constant(1))
     }
 }
