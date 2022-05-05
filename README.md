@@ -75,6 +75,71 @@ When a game is completed, the [result is added to a list](x-source-tag://adding_
   
   When a tile is tapped and filled in with a player's symbol, make the tile rotate twice, quickly.
 
+## Input from an Online Data Stream
+
+### Song Browser
+
+![image alt text](song-browser.png)
+
+*Song Browser* draws all it's data from the endpoint provided by the [iTunes Search API](https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/).
+
+A JSON-formatted response provides a list of songs that match the search term.
+
+Selection is used to determine whether a song is a favourite or not.
+
+Abstraction is used to build the song detail view; each part of that user interface is provided by a smaller "helper" view.
+
+A list is used to display results.
+
+* Callout(Culminating Task Possibilities):
+  Song Browser is an interesting app because an endpoint provides it with interesting data. 🎶 
+  
+  Possibilities for apps that draw data from an online stream structured in the JSON format are broad.
+  
+  Browse some of the resources below. What apps can you imagine, built upon the data these endpoints provide? 
+  
+  * [jService](http://jservice.io/)
+    * A set of trivia questions based on prior Jeopardy! clues.
+    * There is no authentication required to use this endpoint.
+  * [MusixMatch](https://developer.musixmatch.com)
+    * A service that provides lyrics for songs.
+    * An API key is required to access this endpoint; this can be obtained free of charge.
+  * [The Star Wars API](https://swapi.dev/documentation)
+    * "All the Star Wars data you ever wanted."
+    * There is no authentication required to use this endpoint.
+  * [Numbers API](http://numbersapi.com/?ref=apilist.fun#42)
+    * "Bring your metrics and dates to life."
+    * Provides trivia and interesting information about numbers and dates.
+    * There is no authentication required to use this endpoint.
+  * [Image Charts](https://documentation.image-charts.com)
+    * Send a request to this endpoint and it will return a chart or graph in your desired image format.
+    * There is no authentication required to use this endpoint.
+  * [The Open Movie Database](http://www.omdbapi.com)
+    * The OMDb API is a web service to obtain movie information. 
+    * There is no authentication required to use this endpoint.
+  * [Spoonacular](https://spoonacular.com/food-api/docs)
+    * Provides nutrition, recipe, ingredients, and allergens data for food.
+    * An API key is required to access this endpoint; this can be obtained free of charge.
+  * [Stock News API](https://stocknewsapi.com/)
+    * "Get the latest stock news from the best news sources. Use our API and access clean and relevant stock market news data."
+    * An API key is required to access this endpoint; this can be obtained free of charge.
+  * [Calendarific](https://calendarific.com/api-documentation)
+    * "Calendarific is a developer-friendly ... API giving you access to public, local & bank holidays and observances; and spanning over 230 countries, 3,300+ states and 100+ languages."
+    * An API key is required to access this endpoint; this can be obtained free of charge.
+  * [AirVisual API](https://api-docs.iqair.com/?version=latest)
+    * Provides air quality data for locations all over the world.
+    * An API key is required to access this endpoint; this can be obtained free of charge.
+  * [Joke API](https://sv443.net/jokeapi/v2/)
+    * A web service that serves jokes in various formats.
+    * There is no authentication required to use this endpoint.
+  * [The Meal Database](https://www.themealdb.com/api.php)
+    * A web service that provides information about food and meals, based on categories and other criteria.
+    * There is no authentication required to use this endpoint.
+
+
+    
+
+
 ## Input from File in App Bundle 
 
 ### Matching Game

@@ -9,6 +9,13 @@
       name = "InputModes">
       <Group
          location = "container:"
+         name = "FromOnlineDataStream">
+         <FileRef
+            location = "group:SongBrowser/SongBrowser.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "container:"
          name = "FromFileInAppBundle">
          <FileRef
             location = "group:MatchingGame/MatchingGame.xcodeproj">
@@ -28,6 +35,9 @@
    <Group
       location = "container:"
       name = "SupportingImages">
+      <FileRef
+         location = "group:song-browser.png">
+      </FileRef>
       <FileRef
          location = "group:matching-game.png">
       </FileRef>
