@@ -9,9 +9,22 @@
       name = "InputModes">
       <Group
          location = "container:"
+         name = "UserAction">
+         <FileRef
+            location = "group:MultiplicationMaestro/MultiplicationMaestro.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:NoughtsAndCrosses/NoughtsAndCrosses.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "container:"
          name = "FromOnlineDataStream">
          <FileRef
             location = "group:SongBrowser/SongBrowser.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:Announcements/Announcements.xcodeproj">
          </FileRef>
       </Group>
       <Group
@@ -21,37 +34,30 @@
             location = "group:MatchingGame/MatchingGame.xcodeproj">
          </FileRef>
       </Group>
-      <Group
-         location = "container:"
-         name = "UserAction">
-         <FileRef
-            location = "group:MultiplicationMaestro/MultiplicationMaestro.xcodeproj">
-         </FileRef>
-         <FileRef
-            location = "group:NoughtsAndCrosses/NoughtsAndCrosses.xcodeproj">
-         </FileRef>
-      </Group>
    </Group>
    <Group
       location = "container:"
       name = "SupportingImages">
       <FileRef
-         location = "group:song-browser.png">
+         location = "group:SupportingImages/announcements.png">
       </FileRef>
       <FileRef
-         location = "group:matching-game.png">
+         location = "group:SupportingImages/matching-game.png">
       </FileRef>
       <FileRef
-         location = "group:multiplication-maestro-something-missing.png">
+         location = "group:SupportingImages/multiplication-maestro-something-missing.png">
       </FileRef>
       <FileRef
-         location = "group:multiplication-maestro-tabs.png">
+         location = "group:SupportingImages/multiplication-maestro-tabs.png">
       </FileRef>
       <FileRef
-         location = "group:multiplication-maestro.png">
+         location = "group:SupportingImages/multiplication-maestro.png">
       </FileRef>
       <FileRef
-         location = "group:noughts-and-crosses.png">
+         location = "group:SupportingImages/noughts-and-crosses.png">
+      </FileRef>
+      <FileRef
+         location = "group:SupportingImages/song-browser.png">
       </FileRef>
    </Group>
 </Workspace>

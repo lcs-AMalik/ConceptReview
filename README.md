@@ -6,7 +6,7 @@ This project contains example apps that take their primary input from a variety 
 
 ### Multiplication Maestro
 
-![image alt text](multiplication-maestro.png)
+![6 times 5 presented in large type, an empty box waiting for an answer, a button for the user to submit the answer, and a list of prior multiplication questions. The list of prior questions shows the multiplicand and multiplier, the user's answer, and icons indicating whether each answer was correct or incorrect. When an answer is incorrect, the correct answer is shown in brackets.](SupportingImages/multiplication-maestro.png)
 
 *Multiplication Maestro* generates data entirely from user actions when [answers to questions are provided in a text field](x-source-tag://mm_user_action).
 
@@ -32,7 +32,7 @@ As questions are answered, results are added to the list, with the most recent q
   
   Make the necessary code changes to correct for this.
 
-![image alt text](multiplication-maestro-something-missing.png)
+![The list of prior questions completed shows that when a user checks an answer after not having supplied any input, there is a blank showing for their response. This makes it appear as though something is potentially broken in the app's logic. How could the app be modified so that it is clear the user provided no input or response to a question?](SupportingImages/multiplication-maestro-something-missing.png)
 
 * Callout(User Experience Refinement):
   You received a review for *Multiplication Maestro* on the App Store that mentioned the interface feels crowded on devices with smaller screen sizes. 🧐 
@@ -43,11 +43,11 @@ As questions are answered, results are added to the list, with the most recent q
   
   What *property wrapper* will you need to use on the two views that receive the list from the app level file, so that any changes to the list on those tabs are sent up to the source of truth?
 
-![image alt text](multiplication-maestro-tabs.png)
+![Images showing the primary quizzing interface on one tab, named 'Practice', and the list of prior questions completed on a second tab, named 'History'.](SupportingImages/multiplication-maestro-tabs.png)
 
 ### Noughts and Crosses
 
-![image alt text](noughts-and-crosses.png)
+![A 'Noughts and Crosses' game board, three columns and three rows, shown at top. The 'crosses' player has won. A button is present allowing a new game to be started. A list of prior game results is shown below the primary game playing interface. For each game in the list, an image shows where noughts and crosses were placed in each game, along with who won that game, and in how many moves.](SupportingImages/noughts-and-crosses.png)
 
 *Noughts and Crosses*, also known as "x's and o's", generates data entirely from [user actions that trigger events](x-source-tag://user_action).
 
@@ -79,7 +79,7 @@ When a game is completed, the [result is added to a list](x-source-tag://adding_
 
 ### Song Browser
 
-![image alt text](song-browser.png)
+![One image depicts an interface where the user can search for songs by providing the artist name, song name, or other information. Another image depicts the list of search results for the search text 'Shake It Off'. A final image showing an interface allowing the user to play a preview clip of 'Shake It Off' by Taylor Swift, with links to view the artist's page in Apple Music, or the album page in Apple Music. Another button  allows the user to add this song to a list of favourites.](SupportingImages/song-browser.png)
 
 *Song Browser* draws all it's data from the endpoint provided by the [iTunes Search API](https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/).
 
@@ -97,25 +97,49 @@ A list is used to display results.
   Possibilities for apps that draw data from an online stream structured in the JSON format are broad.
   
   Browse some of the resources below. What apps can you imagine, built upon the data these endpoints provide? 
-  
+
+  * [Advice Slips](https://api.adviceslip.com)
+    * Provides small nuggets of wisdom on demand.
+    * There is no authentication required to use this endpoint.
+  * [AirVisual API](https://api-docs.iqair.com/?version=latest)
+    * Provides air quality data for locations all over the world.
+    * An API key is required to access this endpoint; this can be obtained free of charge.
+  * [Calendarific](https://calendarific.com/api-documentation)
+    * "Calendarific is a developer-friendly ... API giving you access to public, local & bank holidays and observances; and spanning over 230 countries, 3,300+ states and 100+ languages."
+    * An API key is required to access this endpoint; this can be obtained free of charge.
+  * [Deck of Cards API](https://deckofcardsapi.com)
+    * Everything you need to implement a game that involves the use of a deck of cards.
+    * There is no authentication required to use this endpoint.
+  * [Dungeons and Dragons API](http://www.dnd5eapi.co)
+    * Query the 5th edition of the Dungeons and Dragons System Reference Document for details on spells, monsters, et cetera.
+    * There is no authentication required to use this endpoint.
+  * [Exchange Rates](https://exchangeratesapi.io)
+    * A free service providing current and historical foreign exchange rates.
+    * An API key is required to access this endpoint; this can be obtained free of charge.
+  * [Image Charts](https://documentation.image-charts.com)
+    * Send a request to this endpoint and it will return a chart or graph in your desired image format.
+    * There is no authentication required to use this endpoint.
+  * [Joke API](https://github.com/15Dkatz/official_joke_api)
+    * A web service that serves jokes in various formats.
+    * There is no authentication required to use this endpoint.
   * [jService](http://jservice.io/)
     * A set of trivia questions based on prior Jeopardy! clues.
     * There is no authentication required to use this endpoint.
-  * [MusixMatch](https://developer.musixmatch.com)
-    * A service that provides lyrics for songs.
-    * An API key is required to access this endpoint; this can be obtained free of charge.
-  * [The Star Wars API](https://swapi.dev/documentation)
-    * "All the Star Wars data you ever wanted."
+  * [Meal Database](https://www.themealdb.com/api.php)
+    * A web service that provides information about food and meals, based on categories and other criteria.
     * There is no authentication required to use this endpoint.
   * [Numbers API](http://numbersapi.com/?ref=apilist.fun#42)
     * "Bring your metrics and dates to life."
     * Provides trivia and interesting information about numbers and dates.
     * There is no authentication required to use this endpoint.
-  * [Image Charts](https://documentation.image-charts.com)
-    * Send a request to this endpoint and it will return a chart or graph in your desired image format.
-    * There is no authentication required to use this endpoint.
-  * [The Open Movie Database](http://www.omdbapi.com)
+  * [Open Movie Database](http://www.omdbapi.com)
     * The OMDb API is a web service to obtain movie information. 
+    * There is no authentication required to use this endpoint.
+  * [Open Trivia Database](https://opentdb.com/api_config.php)
+    * Another source of trivia questions and answers. Can be queried by category. 
+    * There is no authentication required to use this endpoint.
+  * [Song Lyrics API](https://lyricsovh.docs.apiary.io/#reference/0/lyrics-of-a-song/search?console=1)
+    * A service that provides lyrics for songs.
     * There is no authentication required to use this endpoint.
   * [Spoonacular](https://spoonacular.com/food-api/docs)
     * Provides nutrition, recipe, ingredients, and allergens data for food.
@@ -123,28 +147,42 @@ A list is used to display results.
   * [Stock News API](https://stocknewsapi.com/)
     * "Get the latest stock news from the best news sources. Use our API and access clean and relevant stock market news data."
     * An API key is required to access this endpoint; this can be obtained free of charge.
-  * [Calendarific](https://calendarific.com/api-documentation)
-    * "Calendarific is a developer-friendly ... API giving you access to public, local & bank holidays and observances; and spanning over 230 countries, 3,300+ states and 100+ languages."
-    * An API key is required to access this endpoint; this can be obtained free of charge.
-  * [AirVisual API](https://api-docs.iqair.com/?version=latest)
-    * Provides air quality data for locations all over the world.
-    * An API key is required to access this endpoint; this can be obtained free of charge.
-  * [Joke API](https://sv443.net/jokeapi/v2/)
-    * A web service that serves jokes in various formats.
+  * [Star Wars API](https://swapi.dev/documentation)
+    * "All the Star Wars data you ever wanted."
     * There is no authentication required to use this endpoint.
-  * [The Meal Database](https://www.themealdb.com/api.php)
-    * A web service that provides information about food and meals, based on categories and other criteria.
+  * [Weather API](https://www.metaweather.com/api/)
+    * Given a latitude, longitude, city, or other search criteria, obtain a current weather forecast.
     * There is no authentication required to use this endpoint.
 
+### Announcements
 
-    
+![A list of school announcements is shown; users can navigate to a detail view to see more information. It is also possible to save announcements that a user wants to remember for future reference.](SupportingImages/announcements.png)
 
+*Announcements* takes all of it's input data from a remote endpoint – the difference is that this endpoint draws it's data from [a spreadsheet](https://docs.google.com/spreadsheets/d/1yy7ZEUfnW5L2jr_IFKh0Nj1NUrTU7PlsCeFU3z-2_Hc/edit#gid=0) that you, as the programmer, control!
+
+This is made possible by the [Sheety service](https://sheety.co), which converts Google Sheets data into JSON formatted data.
+
+As a result, the input to your app is now *flexible* and easily updated.
+
+You can distribute the app, and as data changes in the spreadsheet, what is displayed to users within your app will update to reflect those changes. 
+
+An example of where sequence matters in this app is when [an announcement that is being saved by the user is reported up to the spreadsheet](x-source-tag://a_sequence). First the announcement being saved must be encoded in JSON format. Only *after* that occurs can the data be sent to the spreadsheet via the remote endpoint.
+
+One example of a selection statement being used is to [determine whether an announcement is currently saved or not](x-source-tag://a_selection_statement).
+
+An example of when abstraction is used is the "star" button at the bottom of the announcement detail page. This button, an instance of `SaveAnnouncementButtonView`, is used to save (or remove) an announcement from the list of saved announcements. There is a significant amount of logic within that view. If that logic was kept directly inside the `AnnouncementDetailView` structure, that structure's code would become very long and hard to read. This is an example of how applying abstraction helps to manage complexity. The code in `AnnouncementDetailView` is easier to read and debug because we have abstracted out a lot of functionality into `SaveAnnouncementButtonView`.
+
+Lists play a large role in how *Announcements* works.
+
+A [list is used to receive data](x-source-tag://a_announcements_list) from the remote spreadsheet. This is the primary list the user sees when browsing announcements. Since we do not know how many announcements will be received into our app at any given time, a list must be used. It would not be possible to write this app by trying to use individual variables to present each announcement.
+
+Another example of lists being used is to [track saved announcements that the user wants to remember](x-source-tag://a_saved_announcements). This list is initialized at the app level using the `@State` property wrapper, because that is the source of truth for the list – where it is first created. The list is then shared as a reference to the other views that need to use it. In those views, the list is a derived value, so we mark it with the `@Binding` property wrapper. 
 
 ## Input from File in App Bundle 
 
 ### Matching Game
 
-![image alt text](matching-game.png)
+![Four images are shown in a grid. Cherries in the top left corner, a cooked turkey in the top right, a carrot in the bottom left, and a strawberry in the bottom right. The user has been prompted, with text, to tap the image the strawberry. A button labelled 'Next' allows the user to advance to a new question. A large green checkmark in a green circle is present to indicate that the user correctly tapped on the image of the strawberry.](SupportingImages/matching-game.png)
 
 *Matching Game* could not exist without input from files in the app bundle. A [JSON file provides items that are to be matched](x-source-tag://mg_input_from_file), and images are stored in the **Assets** folder.
 

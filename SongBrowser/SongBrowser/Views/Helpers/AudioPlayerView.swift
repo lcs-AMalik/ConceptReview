@@ -70,6 +70,7 @@ struct AudioPlayerView: View {
             
         }
         .onDisappear() {
+            isSongPlaying = false
             audioPlayer.pause()
         }
     }
